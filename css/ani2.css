@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* tag reset */
+body, p, ul{margin: 0;padding: 0;}
+ul{list-style: none;}
+
+#txtBox{font-family: Roboto;font-weight: 900;width: 400px;padding: 50px;margin: 50px auto;background: #ffff00;line-height: 50px;font-size: 40px;color: #777;text-align: center;}
+
+#txtBox ul{height: 50px;overflow: hidden;}
+#txtBox ul li{margin-bottom: 50px;}
+#txtBox ul li span{display: inline-block;padding: 0 10px;color: #ffffff;}
+#txtBox ul li:nth-child(1) span{background: #ff0000;}
+#txtBox ul li:nth-child(2) span{background: #008000;}
+#txtBox ul li:nth-child(3) span{background: #0000ff;}
+#txtBox ul li:first-child{
+    -webkit-animation: txtMove 10s cubic-bezier(0.27, 0.56, 0.76, 0.43) infinite;
+    -moz-animation: txtMove 10s cubic-bezier(0.27, 0.56, 0.76, 0.43) infinite;
+    -o-animation: txtMove 10s cubic-bezier(0.27, 0.56, 0.76, 0.43) infinite;
+    animation: txtMove 10s cubic-bezier(0.27, 0.56, 0.76, 0.43) infinite;}
+
+@-webkit-keyframes txtMove{
+    0%{margin-top: 100px;}
+    5%{margin-top: 0;}
+    33%{margin-top: 0;}
+    38%{margin-top: -100px;}
+    66%{margin-top: -100px;}
+    71%{margin-top: -200px;}
+    99%{margin-top: -200px;}
+    100%{margin-top: -250px;}
+}
+@-moz-keyframes txtMove{
+    0%{margin-top: 100px;}
+    5%{margin-top: 0;}
+    33%{margin-top: 0;}
+    38%{margin-top: -100px;}
+    66%{margin-top: -100px;}
+    71%{margin-top: -200px;}
+    99%{margin-top: -200px;}
+    100%{margin-top: -250px;}
+}
+@-o-keyframes txtMove{
+    0%{margin-top: 100px;}
+    5%{margin-top: 0;}
+    33%{margin-top: 0;}
+    38%{margin-top: -100px;}
+    66%{margin-top: -100px;}
+    71%{margin-top: -200px;}
+    99%{margin-top: -200px;}
+    100%{margin-top: -250px;}
+}
